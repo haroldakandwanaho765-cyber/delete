@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youth Employment And Survival In Uganda</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css">
+    <style>
+        /* Enhanced Custom CSS with More Vibrant Color Scheme and CSS Animations */
+        body {
+            font-family: 'Roboto', sans-serif; /* Modern font */
+            background-color: #fffacd; /* Lemon chiffon background for warmth */
+            color: #333;
+            line-height: 1.6;
+            animation: fadeInBody 1s ease-in-out; /* Fade in animation for body */
+        }
+        @keyframes fadeInBody {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .navbar {
+            background-color: darkcyan; /* Vibrant orange-red for energy */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: blueviolet !important;
+            font-weight: 500;
+            margin-right: 20px;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: black !important; /* Bright yellow hover */
+            animation: pulse 0.5s infinite; /* Pulse animation on hover */
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .header-section {
+            background: linear-gradient(to bottom,rgb(243, 202, 202)); /* Vibrant tomato to orange-red gradient */
+            color: white;
+            padding: 60px 30px;
+            text-align: center;
+            border-radius: 0 0 30px 30px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            animation: slideDown 1s ease-out; /* Slide down animation for header */
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .header-section img {
+            border-radius: 50%;
+            border: 5px solid #ffffff;
+            margin-bottom: 25px;
+            transition: transform 0.3s;
+            animation: rotateIn 2s ease-in-out; /* Rotate in animation for logo */
+        }
+        @keyframes rotateIn {
+            from { transform: rotate(-360deg); opacity: 0; }
+            to { transform: rotate(0); opacity: 1; }
+        }
+        .header-section img:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+        .header-section h1 {
+            font-size: 2.5rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            animation: fadeInText 1.5s ease-in; /* Fade in for heading */
+        }
+        @keyframes fadeInText {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .form-section {
+            background-color: #ffffff;
+            padding: 40px;
+            margin: 30px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+            animation: fadeInUp 1s ease-out; /* Fade in up for sections */
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .form-section:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Hover shadow effect */
+        }
+        .form-section form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-section input {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-section button {
+            width: 100%;
+            padding: 10px;
+            background-color: #dda9e7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .form-section button:hover {
+            background-color: #6c78e9;
+        }
+        h1, h2, h3, h4 {
+            color: #ff4500; /* Matching vibrant orange-red headings */
+            font-weight: 700;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            background-color: #fffacd; /* Light yellow background for list items */
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #32cd32; /* Green accent border for growth */
+            transition: background-color 0.3s, transform 0.3s;
+            animation: bounceIn 0.8s ease-in-out; /* Bounce in for list items */
+        }
+        @keyframes bounceIn {
+            0% { transform: scale(0.9); opacity: 0; }
+            50% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+        ul li:hover {
+            background-color: #ffffe0;
+            transform: translateX(5px); /* Slight slide on hover */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s, transform 0.3s;
+            animation: fadeInImage 1.2s ease-in; /* Fade in for images */
+        }
+        @keyframes fadeInImage {
+            from { opacity: 0; filter: blur(5px); }
+            to { opacity: 1; filter: blur(0); }
+        }
+        img:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            transform: scale(1.02); /* Subtle zoom */
+        }
+        footer {
+            background: linear-gradient(to top, #8d8988, #383737); /* Vibrant orange-red gradient footer */
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-top: 8px solid #aef1b4; /* Chocolate border for contrast */
+            animation: fadeInFooter 1.5s ease-in; /* Fade in for footer */
+        }
+        @keyframes fadeInFooter {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .social-media-icons a {
+            margin: 0 15px;
+            transition: transform 0.3s, opacity 0.3s;
+            animation: iconBounce 1s infinite alternate; /* Bouncing icons */
+        }
+        @keyframes iconBounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-5px); }
+        }
+        .social-media-icons a:hover {
+            transform: scale(1.3);
+            opacity: 0.8;
+        }
+        .contact-info p {
+            margin: 8px 0;
+            font-size: 1.1rem;
+        }
+        .contact-info a {
+            color: #ffff00; /* Bright yellow links */
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        /* Add Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="About Us.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact us.html">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <section class="header-section">
+            <h1>Youth Employment and Survival in Uganda</h1>
+            <img src="images/logo.jpg" alt="logo" width="200" height="200">
+        </section>
+
+        <section class="form-section">
+            <h2>Please Fill in This Form</h2>
+            <form action="">
+                <input type="text" placeholder="First Name" name="firstName" required>
+                <input type="text" placeholder="Last Name" name="lastName" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Your phone number" required>
+                <input type="password" placeholder="Your password" name="password" required>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+  <footer>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><strong>Phone:</strong> <a href="tel:+256777583565">+256700911323</a></p>
+            <p><strong>Email:</strong> <a href="mailto:haroldakandwanaho765@gmail.com">haroldakandwanaho765@gmail.com</a></p>
+             <p><strong>Whatsapp:</strong> <a href="http://wa.me/+256777583565">Chat with us</a></p>
+            <p><strong>Working Hours:</strong> Monday - Sunday, 8:00 AM - 5:00 PM</p>
+                <hr>
+            <div class="social-media-icons">
+            <a href="tel:+256777583565"> <img src="images/18.avif" alt="phone" width="40" height="40"></a>
+            <a href="mailto:haroldakandwanaho765@gmail.com"> <img src="images/19.png" 
+            alt="email" width="40" height="40"></a>    
+            <a href="http://wa.me/+256777583565"> <img src="images/14.jpg" alt="whatsapp" width="40" height="40"></a>
+            <a href="http://twitter.com/aharoldaka"> <img src="images/15.webp" alt="twitter" width="40" height="40"></a>
+            <a href="http://www.facebook.com/harodakandwanaho"> <img src="images/16.webp" alt="facebook" width="40" height="40"></a>
+            <a href="http://www.instagram.com/harodakandwanaho"> <img src="images/13.webp" alt="instagram" width="40" height="40"></a>
+            <a href="http://www.tiktok.com/@akandwanaho.harol"> <img src="images/17.webp" alt="tiktok" width="40" height="40"></a>
+            <a href="http://www.youtube.com/@AKANDWANAHOHarod-p1r"> <img src="images/11.webp" alt="youtube" width="40" height="40"></a>
+            </div>
+            <hr>
+            
+        </div>
+        
+        <p>&copy; 2025 YOUTH EMPLOYMENT AND SURVIVAL UGANDA. All rights reserved.</p>
+
+    </footer>
+
+</div>
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
